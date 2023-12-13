@@ -2,6 +2,7 @@
 
 namespace App\Core;
 
+use Exception;
 use PDO;
 
 class Model
@@ -14,7 +15,7 @@ class Model
 
 		try {
 
-			$this->db = new PDO("mysql:host=localhost;dbname=dbpbwl_project10", "root", "");
+			$this->db = new PDO("mysql:host=localhost;dbname=rhy", "root", "");
 		} catch (Exception $e) {
 			die("error! " . $e->getMessage());
 		}

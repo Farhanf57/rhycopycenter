@@ -27,6 +27,19 @@ CREATE TABLE tb_users (
 	UNIQUE KEY(user_email)
 );
 
+CREATE TABLE tb_produks (
+	produk_id INT(11) NOT NULL AUTO_INCREMENT,
+	produk_nama VARCHAR(255) NOT NULL,
+	produk_gambar VARCHAR(255) NOT NULL,
+	produk_deskripsi TEXT NOT NULL,
+	produk_stok INT(3) NOT NULL,
+	produk_harga INT(11) NOT NULL,
+	produk_rating FLOAT DEFAULT NULL,
+	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	updated_at DATETIME DEFAULT NULL,
+	PRIMARY KEY(produk_id)
+);
+
 INSERT INTO
 	tb_users
 VALUES
