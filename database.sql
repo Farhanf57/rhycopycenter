@@ -40,6 +40,21 @@ CREATE TABLE tb_produks (
 	PRIMARY KEY(produk_id)
 );
 
+CREATE TABLE tb_customers(
+	customer_id INT(7) NOT NULL AUTO_INCREMENT,
+	customer_username VARCHAR(50) NOT NULL,
+	customer_nama  VARCHAR(100) NOT NULL,
+	customer_gambar VARCHAR(255) NOT NULL,
+	customer_email  VARCHAR(255) NOT NULL,
+	customer_password  VARCHAR(255) NOT NULL,
+	customer_phone  VARCHAR(15),
+	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	updated_at DATETIME DEFAULT NULL,
+	PRIMARY KEY (customer_id),
+    UNIQUE KEY (customer_username),
+    UNIQUE KEY (customer_email)
+);
+
 INSERT INTO
 	tb_users
 VALUES
