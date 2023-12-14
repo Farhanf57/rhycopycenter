@@ -53,6 +53,16 @@
 					</a>
 				</li>
 				<li>
+					<a href="<?php echo URL; ?>/customers">
+						<img class="icon" src="<?php echo AST; ?>/img/menu.png" alt=""> Customer
+					</a>
+				</li>
+				<li>
+					<a href="<?php echo URL; ?>/orders">
+						<img class="icon" src="<?php echo AST; ?>/img/menu.png" alt=""> Order
+					</a>
+				</li>
+				<li>
 					<a href="<?php echo URL; ?>/dashboard/logout">
 						<img class="icon" src="<?php echo AST; ?>/img/menu.png" alt=""> Logout
 					</a>
