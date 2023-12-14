@@ -37,6 +37,12 @@
 						<img class="icon" src="<?php echo AST; ?>/img/menu.png" alt=""> Categories
 					</a>
 				</li>
+				</li>
+				<li>
+					<a href="<?php echo URL; ?>/orders">
+						<img class="icon" src="<?php echo AST; ?>/img/menu.png" alt=""> Order
+					</a>
+				</li>
 				<li>
 					<a href="<?php echo URL; ?>/posts">
 						<img class="icon" src="<?php echo AST; ?>/img/menu.png" alt=""> Post
