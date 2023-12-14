@@ -55,6 +55,19 @@ CREATE TABLE tb_customers(
     UNIQUE KEY (customer_email)
 );
 
+CREATE TABLE tb_order(
+	id_order INT(7) NOT NULL AUTO_INCREMENT,
+	nama_penerima VARCHAR(100) NOT NULL,
+	alamat_penerima  VARCHAR(255) NOT NULL,
+	jumlah_barang VARCHAR(255) NOT NULL,
+	jenis_pengiriman  VARCHAR(255) NOT NULL,
+	total_harga  VARCHAR(255) NOT NULL,
+	customer_phone  VARCHAR(15),
+	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	updated_at DATETIME DEFAULT NULL,
+	PRIMARY KEY (id_order)
+);
+
 INSERT INTO
 	tb_users
 VALUES
